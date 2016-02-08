@@ -137,7 +137,17 @@ install_dotfiles () {
   done
 }
 
+mkdir_local_application () {
+  info 'creating ~/Applications'
+
+  if ! [ -d "$HOME/Applications" ]
+  then
+    mkdir "$HOME/Applications"
+  fi
+}
+
 setup_gitconfig
+mkdir_local_application
 install_dotfiles
 
 # If we're on a Mac, let's install and setup homebrew.
