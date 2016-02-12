@@ -41,8 +41,10 @@ zle -N newtab
 
 bindkey '^[^[[D' backward-word
 bindkey '^[^[[C' forward-word
-bindkey '^A' beginning-of-line
-bindkey '^E' end-of-line
-bindkey '^[[3~' delete-char
-bindkey '^[^N' newtab
-bindkey '^?' backward-delete-char
+bindkey '^A'     beginning-of-line
+bindkey '^E'     end-of-line
+bindkey '^[[3~'  delete-char
+bindkey '^[^N'   newtab
+bindkey '^?'     backward-delete-char
+bindkey '^R'     history-incremental-search-backward
+bindkey '^T'     history-search-forward
